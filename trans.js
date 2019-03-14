@@ -12,8 +12,11 @@ $(document).ready(function() {
 
       $.ajax({
         url: href,
+        fail: function() {
+    alert( "error" );
+},
         success: function (data) {
-          $("body").fadeOut(250)
+          $("body").fadeOut(25)
         }
       })
 
