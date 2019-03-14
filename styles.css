@@ -1,0 +1,74 @@
+body {
+    margin: -50px 20px 0 20px !important;
+    padding: 0 !important;
+}
+span:
+.head {
+    max-width: 63em;
+    margin: 0 auto;
+}
+
+.grid {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.media {
+    /* background-color: red; */
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+h1 {
+    /* background-color: red; */
+
+    font-family: "Georgia", serif;
+    font-size: 4em;
+    margin: 82px 0 0 0;
+}
+
+h2 {
+    font-family: "Georgia", serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding: 0 0 50px 0;
+    margin: 10px 0 40px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+img {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+responsive at full length
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+    @media (min-width: 630px) {
+
+        .head {
+            max-width: 55em;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 20px;
+            max-width: 50em;
+        }
+    
+
+        .media {
+
+        }
+
+    }
+}
