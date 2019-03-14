@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Georgia", serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: lighter;
     font-size: 1.2em;
     padding: 0 0 50px 0;
@@ -64,7 +64,7 @@ responsive at full length
             grid-gap: 20px;
             max-width: 50em;
         }
-    
+
 
         .media {
 
