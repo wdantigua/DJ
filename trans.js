@@ -10,15 +10,11 @@ $(document).ready(function() {
 
 
 
-      $.ajax({
-        url: href,
-        fail: function() {
-    alert( "error" );
-},
-        success: function (data) {
-          $("body").fadeOut(25)
-        }
-      })
+      $.ajax( "example.php" ).done(function() {
+      $("body").fadeOut(25);
+  });
+});
 
-    })
+
+
 });
