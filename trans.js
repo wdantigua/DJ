@@ -12,15 +12,8 @@ $(document).ready(function() {
 
       $.ajax({
         url: href,
-
         success: function (data) {
-          $("body").fadeOut(250, function () {
-            const newPage = $(data).filter("body").html()
-
-            $("body").html(newPage)
-
-            $("body").fadeIn(250)
-          })
+          $("body").fadeOut(250)
         }
       })
 
