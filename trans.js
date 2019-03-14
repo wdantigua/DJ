@@ -2,17 +2,20 @@ $(document).ready(function() {
 
     $(".media a").on("click", function (event) {
 
-      event.preventDefault()
+      event.preventDefault();
 
-      const href = $(this).attr("href")
+href = $(this).attr("href");
 
-      window.history.pushState(null, null, href)
+      window.history.pushState(null, null, href);
 
 
+      $.ajax({
+         url: href,
+         success: function (data) {
+           $("html").fadeOut(250)
+       }
+       })
 
-      $.ajax( "example.php" ).done(function() {
-      $("body").fadeOut(25);
-  });
 });
 
 
